@@ -29,7 +29,7 @@
 	// redo the above using dot notation
 	NSString *digit = sender.titleLabel.text;
 	if (userIsInTheMiddleOfTypingANumber) {
-		[display setText:[[display text] stringByAppendingString:digit]];
+		display.text = [display.text stringByAppendingString:digit];
 	} else {
 		[display setText:digit];
 		userIsInTheMiddleOfTypingANumber = YES;
